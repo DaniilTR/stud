@@ -1,0 +1,521 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-9baffe0f-35b8-4c9c-b1cd-8cc77fe24aa8@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-742337ef-39bc-449b-8ca4-8b6ecb4bb06f@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-769f3f7a-1914-4c23-a2e2-123a4520021e@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-9384cd6f-6286-4cb6-9a9b-0bbd20581472@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-a0df4617-a37e-4f24-a5a3-2f498198834e@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-87c347ae-8b03-4f27-ba14-0ab423c4b55b@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-8b8e2874-8ced-4174-97ca-724ba39198e8@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-a2d0ef13-673e-4032-a6d5-e3ca7cfe9f4c@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-3768af5e-d4e3-4537-807e-8cb7d56f29ec@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-be50cf96-3b4d-4f56-8b71-d9a58feb4120@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-e6e8bb70-8b71-4a25-92d6-55e85fd77274@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-832d3079-43f6-467c-8134-79421bc0ddec@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-d24cb49a-f0bf-4434-979b-983885e7af27@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-24d973d5-daed-4327-ac44-92ec4f69f81d@mhtml.blink">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="shortcut icon" href="https://resources.satbayev.university/images/favicons/favicon16.png">
+    <link rel="apple-touch-icon" href="https://resources.satbayev.university/images/favicons/favicon60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://resources.satbayev.university/images/favicons/favicon76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://resources.satbayev.university/images/favicons/favicon120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://resources.satbayev.university/images/favicons/favicon152.png">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/bvi.min.css">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/style_white.css?v=20255161437">
+    <link rel="stylesheet" href="https://resources.satbayev.university/styles/resources-app.styles.css?v=20255161437">
+
+    <link href="https://stud.satbayev.university/bundles/app-styles?v=iItXOAncM2EC9cNqMj-xTsHYstXwvK20EAN1CtBYZpA1" rel="stylesheet">
+
+
+
+</head>
+<body style="">
+        <form action="https://sso.satbayev.university/account/logoff" met="hod=&quot;get&quot;" id="logoutForm" novalidate="">
+            
+        </form>
+    
+<div ng-app="studentsApp" ng-strict-di="">
+    <students-app>
+<!----><ui-view><nitu-confirm><!----></nitu-confirm>
+                        <nitu-notification-box><!----></nitu-notification-box>
+                        <div class="main fullscreen_white white_template">
+                            <div class="content_block">
+                                <nitu-header with-home="true" warning-text="$resolve.authService.getDebtAmount()" show-image="true" bread-crumbs="[]" by-array="true" crumb-type="2" class-name="students-header"><script>
+    new isvek.Bvi();
+</script>
+<div class="cabinet_header_component students-header" style="border: none" ng-class="$ctrl.className">
+
+    <!--<div class="logo_block" ng-if="$ctrl.withLogo">
+        <img src="../images/university_small_logo.png" />
+    </div>
+    <div class="logo_block" ng-if="$ctrl.withHome">
+        <i class="icon-home"></i>
+    </div>-->
+    <!---->
+    <div class="cab_header_center">
+        <div class="title_text_block">
+            <!----><div ng-if="$ctrl.byArray">
+                <div class="top_text">
+                    <!---->
+                    <!----><div class="menu" ng-if="$ctrl.crumbType == $ctrl.crumbTypeEnums.Button">
+                        <a href="//sso.satbayev.university" class="menu_link">
+                            <div class="menu_button">
+                                <i class="icon-home"></i>
+                            </div>
+                        </a>
+                        <!----><div class="menu_button" ng-repeat="crumb in $ctrl.breadCrumbs" ng-click="$ctrl.goTo(crumb)">
+
+                            <i class=" orders_menu"></i><a href="stud.satbayev.university.html"></a>
+                            <!----> <a href="stud.satbayev.university.html"><p ng-if="$ctrl.breadCrumbs.length < 3 || $last">Страница студента</p></a> <!---->
+                            <div class="next_button">
+                                <i class="icon-breadcrumbs_arrow"> </i>
+                            </div>
+                        </div><!----><div class="menu_button" ng-repeat="crumb in $ctrl.breadCrumbs" ng-click="$ctrl.goTo(crumb)">
+
+                            <i class=" orders_menu"></i>
+                            <!----><p ng-if="$ctrl.breadCrumbs.length < 3 || $last">Аттестация</p><!---->
+                            <div class="next_button">
+                                <i class="icon-breadcrumbs_arrow"> </i>
+                            </div>
+                        </div><!---->
+                    </div><!---->
+                </div>
+                <!---->
+
+            </div><!---->
+            <!---->
+        </div>
+        <div class="operator_block">
+            <!--<div ng-if="$ctrl.authService.getLibraryDebtAmount() > 0" class="attention_block">    
+                <a href="http://e-lib.satbayev.university" target="_blank">У вас имеется задолженность по библиотеке в размере: {{$ctrl.authService.getLibraryDebtAmount()}} книг. Подробнее. . .</a>
+            </div>-->
+            <div class="visually_impaired">
+                <!-- <a href="javascript://" onclick="letsee_toggle_panel()"><i class="icon-eye"></i>&nbsp;&nbsp;Версия для слабовидящих</a> -->
+                <a href="#" class="bvi-open"><i class="icon-eye"></i>&nbsp;&nbsp; Версия для слабовидящих</a>
+            </div>
+            <div class="oper_name_block">
+                <p>Трофимов Д.Е.</p>
+                <p class="stat">Бакалавриат</p>
+                <!-- <p style="color: #ce5959 !important;">Книг на руках: {{$ctrl.authService.getLibraryDebtAmount()}}</p> -->
+                <!---->
+            </div>
+            <div class="oper_set_block">
+                <!----><div class="img default-img" ng-if="$ctrl.imageSrc &amp;&amp; $ctrl.showImage" ng-class="{'default-img': !$ctrl.hasImage}">
+                    <img ng-src="//stud.satbayev.university/images/icons/new-icons/default-avatar.png" src="//stud.satbayev.university/images/icons/new-icons/default-avatar.png">
+                    <!-- div class="warning-btn"
+         ng-if="$ctrl.warningText"
+         tabindex="11"
+         ng-click="$ctrl.onClick()"
+         ng-blur="$ctrl.onBlur()"
+         >
+        <i class="icon-warning"></i>
+        <div class="warning-txt"
+             ng-if="$ctrl.warningText && $ctrl.showWarning"
+             ng-bind-html="$ctrl.warningText">
+        </div>po
+    </div>-->
+                </div><!---->
+                <div class="exit_block" ng-click="$ctrl.logOut()">
+                    <i class="icon-enter"></i>
+                    <p>Выход</p>
+                </div>
+                <div class="lang_block">
+                    <button ng-click="$ctrl.changeLanguage('kz')" class="button oper_button" ng-class="{active: $ctrl.isActiveLanguage('kz')}">
+                        Қаз
+                    </button>
+                    <button ng-click="$ctrl.changeLanguage('ru')" class="button oper_button active" ng-class="{active: $ctrl.isActiveLanguage('ru')}">
+                        Рус
+                    </button>
+                    <button ng-click="$ctrl.changeLanguage('en')" class="button oper_button" ng-class="{active: $ctrl.isActiveLanguage('en')}">
+                        Eng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----><div ui-view="content"><edu-attestation-student-new role="student"><!---->
+
+<!----><div class="body_component" ng-if="$ctrl.debt === false">
+    <!---->
+    <!----><div ng-if="$ctrl.hasData" style="margin-bottom: 50px; width: 1140px;">
+        <nitu-table-new th-data="$ctrl.thData" tr-data="$ctrl.datas" class-name="attestation-table" tf-data="$ctrl.tfData" data="$ctrl.data"><div class="table-new-wrapper">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+    <div class="table-new-title">Аттестация</div>
+   <div>
+    <div>Годовой IGPA: 2.63<b></b> </div>
+    <div>IGPA: 2.45<b></b> </div>
+    <div>Кумулятивный IGPA: 1.91<b></b> </div>
+   </div>
+  </div>
+
+  <div class="table-new attestation-table" ng-class="$ctrl.className">
+    <div class="table-new-row main-row">
+      <!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        #
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        Дисциплина
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        Пропуски
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!----><span ng-if="th.preTitle" style="margin-right: 3px;">
+          1
+        </span><!---->
+        Атт.
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!----><span ng-if="th.preTitle" style="margin-right: 3px;">
+          2
+        </span><!---->
+        Атт.
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        Экзам.
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        Итого
+      </div><!----><div class="row-cell row-cell-main" ng-repeat="th in $ctrl.thData">
+        <!---->
+        Букв. обознач.
+      </div><!---->
+    </div>
+
+    <!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        1
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        AAP193 Производственная практика 2
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        0
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        -
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        -
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        2
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        KFK104 Физическая культура IV
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        0
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        25
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        25
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        38
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        88
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        B+
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        3
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        CSE5362 Компьютерная графика
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        8
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        25
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        28
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        37
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        90
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        A-
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        4
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        SEC1852 Безопасность сетевых технологий
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        5
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        21
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        28
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        40
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        89
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        B+
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        5
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        SEC1882 Проектирование безопасных Web-приложений
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        0
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        25
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        28
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        36
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        89
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        B+
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        6
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        CSE5452 Социальная инженерия и этичный хакинг
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        3
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        16.2
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        14.4
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        22.5
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        53.1
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        D-
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        7
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        CSE5462 Технологии защиты компьютерной информации
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        2
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        17.7
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        14.7
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        25.22
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        57.64
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        D+
+        <!---->
+      </div><!---->
+    </div><!----><div class="table-new-row" ng-repeat="tr in $ctrl.trData track by $index">
+      <!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        8
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        AAP500 Военная подготовка
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        0
+        <!----><span ng-if="th.postTitle">
+          %
+        </span><!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!----><div class="row-cell" ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        -
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        -
+        <!---->
+      </div><!----><div class="row-cell " ng-repeat="th in $ctrl.thData" ng-class="{ 'row-cell-error': $ctrl.cellHasError(tr, th) }">
+
+        
+        <!---->
+      </div><!---->
+    </div><!---->
+  </div>
+  <!---->
+  <div style="display: flex; align-items: center; justify-content: end; padding: 16px;">
+    <span style="margin-right: 1rem;">iROS: <b></b></span>
+    <span>SSCI: <b></b></span>
+  </div>
+</div></nitu-table-new>
+    </div><!---->
+    <nitu-empty-text text="EMPTY_TEXT_ATTESTATION" image="attestation.svg" show="!$ctrl.hasData"><!----></nitu-empty-text>
+
+</div><!---->
+</edu-attestation-student-new></div>
+<!----><div ui-view="chat"></div></nitu-header>
+                            </div> 
+                        </div></ui-view></students-app>
+</div>
+
+<form action="/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="6nyXBD_Bz5lirhs3kBnj7uqs6UrzmMuZIIYQPcSIEesGwFGXvCeanDenxtz58JaxaC9HMyO9V5dlWJgMgxmOMX-QVYDNgq9t1RSS975l3gAU-QS3jLIyaCTYLPaJBcjm19mtMQ2"></form>
+
+
+    <script src="//resources.satbayev.university/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/bvi.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-translate.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-translate-loader-static-files.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-translate-loader-url.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-sanitize.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-cookies.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-bind-html-compile.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/mask.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/lodash.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-input-masks-standalone.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/moment.js"></script>
+    <script src="//resources.satbayev.university/Scripts/ru.js"></script>
+    <script src="//resources.satbayev.university/Scripts/kk.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-ui-router.min.js"></script>
+
+    <script src="//resources.satbayev.university/Scripts/ngMask.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-breadcrumb.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/angular-no-captcha.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/jquery.mCustomScrollbar.js"></script>
+    <script src="//resources.satbayev.university/Scripts/scrollbars.min.js"></script>
+    <script src="//resources.satbayev.university/Scripts/ivh-treeview.min.js"></script>
+
+    <script src="//resources.satbayev.university/app/common.bundle.js?v=20255161437"></script>
+  
+    <script src="/app/students-app.bundle.js?v=UTTbVTfOHr-Y0pod451rTHprFwo1aC5d0H2Om5jnsCA1"></script>
+
+    
+    <script>
+        var _ce = _ce || {};
+        _ce.globals = _ce.globals || {};
+        _ce.globals.User = null;
+    </script>
+
+
+
+</body></html>

@@ -1,0 +1,552 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-9baffe0f-35b8-4c9c-b1cd-8cc77fe24aa8@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-742337ef-39bc-449b-8ca4-8b6ecb4bb06f@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-769f3f7a-1914-4c23-a2e2-123a4520021e@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-9384cd6f-6286-4cb6-9a9b-0bbd20581472@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-a0df4617-a37e-4f24-a5a3-2f498198834e@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-87c347ae-8b03-4f27-ba14-0ab423c4b55b@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-8b8e2874-8ced-4174-97ca-724ba39198e8@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-a2d0ef13-673e-4032-a6d5-e3ca7cfe9f4c@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-3768af5e-d4e3-4537-807e-8cb7d56f29ec@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-be50cf96-3b4d-4f56-8b71-d9a58feb4120@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-e6e8bb70-8b71-4a25-92d6-55e85fd77274@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-832d3079-43f6-467c-8134-79421bc0ddec@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-d24cb49a-f0bf-4434-979b-983885e7af27@mhtml.blink"><link rel="stylesheet" type="text/css" href="cid:css-24d973d5-daed-4327-ac44-92ec4f69f81d@mhtml.blink">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="shortcut icon" href="https://resources.satbayev.university/images/favicons/favicon16.png">
+    <link rel="apple-touch-icon" href="https://resources.satbayev.university/images/favicons/favicon60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://resources.satbayev.university/images/favicons/favicon76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://resources.satbayev.university/images/favicons/favicon120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://resources.satbayev.university/images/favicons/favicon152.png">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/bvi.min.css">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://resources.satbayev.university/style/style_white.css?v=20255161437">
+    <link rel="stylesheet" href="https://resources.satbayev.university/styles/resources-app.styles.css?v=20255161437">
+
+    <link href="https://stud.satbayev.university/bundles/app-styles?v=iItXOAncM2EC9cNqMj-xTsHYstXwvK20EAN1CtBYZpA1" rel="stylesheet">
+
+
+
+</head>
+<body style="">
+        <form action="https://sso.satbayev.university/account/logoff" met="hod=&quot;get&quot;" id="logoutForm" novalidate="">
+            
+        </form>
+    
+<div ng-app="studentsApp" ng-strict-di="">
+    <students-app>
+<!----><ui-view><nitu-confirm><!----></nitu-confirm>
+                        <nitu-notification-box><!----></nitu-notification-box>
+                        <div class="main fullscreen_white white_template">
+                            <div class="content_block">
+                                <nitu-header with-home="true" warning-text="$resolve.authService.getDebtAmount()" show-image="true" bread-crumbs="[]" by-array="true" crumb-type="2" class-name="students-header">
+<div class="cabinet_header_component students-header" style="border: none" ng-class="$ctrl.className">
+
+    <!--<div class="logo_block" ng-if="$ctrl.withLogo">
+        <img src="../images/university_small_logo.png" />
+    </div>
+    <div class="logo_block" ng-if="$ctrl.withHome">
+        <i class="icon-home"></i>
+    </div>-->
+    <!---->
+    <div class="cab_header_center">
+        <div class="title_text_block">
+            <!----><div ng-if="$ctrl.byArray">
+                <div class="top_text">
+                    <!---->
+                    <!----><div class="menu" ng-if="$ctrl.crumbType == $ctrl.crumbTypeEnums.Button">
+                        <a href="https://sso.satbayev.university/" class="menu_link">
+                            <div class="menu_button">
+                                
+                            </div>
+                        </a>
+                        <!---->
+                    </div><!---->
+                </div>
+                <!---->
+
+            </div><!---->
+            <!---->
+        </div>
+        <div class="operator_block">
+            <!--<div ng-if="$ctrl.authService.getLibraryDebtAmount() > 0" class="attention_block">    
+                <a href="http://e-lib.satbayev.university" target="_blank">У вас имеется задолженность по библиотеке в размере: {{$ctrl.authService.getLibraryDebtAmount()}} книг. Подробнее. . .</a>
+            </div>-->
+            <div class="visually_impaired">
+                <!-- <a href="javascript://" onclick="letsee_toggle_panel()"><i class="icon-eye"></i>&nbsp;&nbsp;Версия для слабовидящих</a> -->
+                <a href="https://stud.satbayev.university/#" class="bvi-open">&nbsp;&nbsp; Версия для слабовидящих</a>
+            </div>
+            <div class="oper_name_block">
+                <p>Трофимов Д.Е.</p>
+                <p class="stat">Бакалавриат</p>
+                <!-- <p style="color: #ce5959 !important;">Книг на руках: {{$ctrl.authService.getLibraryDebtAmount()}}</p> -->
+                <!---->
+            </div>
+            <div class="oper_set_block">
+                <!----><div class="img default-img" ng-if="$ctrl.imageSrc &amp;&amp; $ctrl.showImage" ng-class="{'default-img': !$ctrl.hasImage}">
+                    <img ng-src="//stud.satbayev.university/images/icons/new-icons/default-avatar.png" src="https://stud.satbayev.university/images/icons/new-icons/default-avatar.png">
+                    <!-- div class="warning-btn"
+         ng-if="$ctrl.warningText"
+         tabindex="11"
+         ng-click="$ctrl.onClick()"
+         ng-blur="$ctrl.onBlur()"
+         >
+        <i class="icon-warning"></i>
+        <div class="warning-txt"
+             ng-if="$ctrl.warningText && $ctrl.showWarning"
+             ng-bind-html="$ctrl.warningText">
+        </div>po
+    </div>-->
+                </div><!---->
+                <div class="exit_block" ng-click="$ctrl.logOut()">
+                    
+                    <p>Выход</p>
+                </div>
+                <div class="lang_block">
+                    <button ng-click="$ctrl.changeLanguage('kz')" class="button oper_button" ng-class="{active: $ctrl.isActiveLanguage('kz')}">
+                        Қаз
+                    </button>
+                    <button ng-click="$ctrl.changeLanguage('ru')" class="button oper_button active" ng-class="{active: $ctrl.isActiveLanguage('ru')}">
+                        Рус
+                    </button>
+                    <button ng-click="$ctrl.changeLanguage('en')" class="button oper_button" ng-class="{active: $ctrl.isActiveLanguage('en')}">
+                        Eng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----><div ui-view="content"><students-start-page title="Разделы"><!---->
+<div class="body_component" style="padding-top: 30px">
+    <div class="content_block">
+        <div class="left_block" style="width: 1100px">
+            <!---->
+            <!----><!----><div class="coubes student-coubes" ng-repeat="part in $ctrl.parts" ng-if="!$ctrl.isDebtOver">
+                <!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/edo-studs3.png">
+                    <p translate="">ЭДО</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-syllabus3.png">
+                    <p translate="">Силлабус</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-advisor3.png">
+                    <p translate="">Мой эдвайзер</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/iup-student3.png">
+                    <p translate="">Индивидуальный учебный план</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <a href="stud.satbayev.university.tr.html"><img src="https://stud.satbayev.university/images/icons/new-icons/student-transcription3.png">
+                    <p translate="">Транскрипт</p></a>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-schedule3.png">
+                    <p translate="">Расписание</p>
+                </div><!---->
+            </div><!----><!----><!----><div class="coubes student-coubes" ng-repeat="part in $ctrl.parts" ng-if="!$ctrl.isDebtOver">
+                <!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/journal-student3.png">
+                    <p translate="">Журнал</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-exam-schedule3.png">
+                    <p translate="">Расписание экзаменов</p>
+                </div><!---->
+                <div class="coube_block" ng-repeat="item i=n part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <!--надо сделать ссылку -->
+                    <a href="stud.satbayev.university.at.html" target="_blank">
+                        <img src="https://stud.satbayev.university/images/icons/new-icons/attestation-student3.png">
+                        <p translate="">Аттестация</p>
+                    </a>
+                </div>
+                <!---->
+                <div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/schedule-read-only-student3.png">
+                    <p translate="">Общее расписание</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/umkd-student3.png">
+                    <p translate="">УМКД</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-status3.png">
+                    <p translate="">Мой статус</p>
+                </div><!---->
+            </div><!----><!----><!----><div class="coubes student-coubes" ng-repeat="part in $ctrl.parts" ng-if="!$ctrl.isDebtOver">
+                <!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/bachelor-student-data3.png">
+                    <p translate="">Личные данные</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-documents3.png">
+                    <p translate="">Документы/Инструкции</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-debt3.png">
+                    <p translate="">Задолженность</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-attendance3.png">
+                    <p translate="">Обходной лист</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/contacts3.png">
+                    <p translate="">Контакты</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-reference3.png">
+                    <p translate="">Справки</p>
+                </div><!---->
+            </div><!----><!----><!----><div class="coubes student-coubes" ng-repeat="part in $ctrl.parts" ng-if="!$ctrl.isDebtOver">
+                <!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/3.png">
+                    <p translate="">Дипломирование</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-library3.png">
+                    <p translate="">Научная библиотека</p>
+                </div><!----><div class="coube_block" ng-repeat="item in part.items track by $index" ng-click="$ctrl.goTo(item)">
+                    <img src="https://stud.satbayev.university/images/icons/new-icons/student-scientific-library3.png">
+                    <p translate="">БД Научной библиотеки</p>
+                </div><!---->
+            </div><!----><!---->
+
+            <!-- <div class="coubes student-coubes" ng-if="!$ctrl.isDebtOver">
+                <div class="coube_block" ng-click="$ctrl.onai.isOpen = true">
+                    <img src="../../../images/icons/new-icons/onai-icon1.png">
+                    <p translate>ONAI</p>
+                </div>
+            </div> -->
+        </div>
+
+        <!----><div class="right_block" ng-if="!$ctrl.isDebtOver">
+            <div class="btton-wrapper">
+                <button class="btton btton-primary btton-start-page" ng-click="$ctrl.DistanceDialog.isOpen = true" ng-disabled="true" disabled="disabled">
+                    Регистрация на дистанционный экзамен
+                    <i class="mdi mdi-account-plus" style="margin-left: 10px;"></i>
+                </button>
+            </div>
+             <!-- <div class="reg_btn" ng-click="$ctrl.AgreementDisabled()" ng-if="$ctrl.dateNow > $ctrl.term">
+                <p translate="">Дисциплины на дистанционный экзамен</p>
+                <i class="mdi mdi-account-plus"></i>
+            </div>  -->
+            <nitu-news-short><div ng-class="{'loading': $ctrl.loading}" class="">
+    <!----><div class="news_block" ng-repeat="(i, item) in $ctrl.shortNews">
+        <div class="inner_left">
+            <!--<img ng-switch-when="false" src="../../../images/news.jpg">-->
+            <img ng-src="//stud.satbayev.university/images/Satabayev_University_logo.png" src="https://stud.satbayev.university/images/Satabayev_University_logo.png">
+        </div>
+        <div class="inner_right">
+            <h3>пересдача экзамена ҒХ</h3>
+            <!-- <div class="news_text"></div>  -->
+            <!--{{item.content}}-->
+            <div class="news_footer">
+                    <a ng-click="$ctrl.goToDetailed(item.id)">Читать подробнее</a>
+                <!-- <a ng-click="$ctrl.goToDetailed(item.id, item.isPersonal)">{{'EDU_NEWS_READ_MORE' | translate}}</a> -->
+                <p>19.05.2025</p>
+            </div>
+            <div class="news_footer" style="margin-top: 10px;justify-content: end;color: #bdbdbd;">
+                <span style="margin-right: 10px;display: flex; align-items: center;">
+                    <i class="icon-eye" style="margin-right: 5px;width: 15px; height: 15px;"></i> 528
+                </span>
+                <span style="display: flex; align-items: center;">
+                    <img src="https://stud.satbayev.university/images/icons/user_profile_news.png" style="width: 15px; height: 15px; 
+                    filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(0%) 
+                    hue-rotate(146deg) brightness(95%) contrast(99%);margin-right: 5px;">
+                     412
+                </span>                
+            </div>
+        </div>
+    </div><!---->
+</div></nitu-news-short>
+            <nitu-personal-news-short><div ng-class="{'loading': $ctrl.loading}" class="">
+    <label for="click" class="notice_title">У Вас нет новых уведомлений: 0 <content> ✉ </content></label>
+    <input type="checkbox" style="display: none;" id="click">
+    <!---->
+</div></nitu-personal-news-short>
+        </div><!---->
+
+        <div class="btton-wrapper">
+            <button class="btton btton-feedback btton-start-page" ng-click="$ctrl.fitBackFormDialog.isOpen = true">
+                Feedback
+                <i class="icon-chat_connection" style="margin-left: 10px;"></i>
+
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+<!-- 1-2 курс бакалавр -->
+<!--<nitu-dialog is-open="$ctrl.firstLevelBachelorDialog.isOpen">
+    
+    <div class="in_alert forget_pass_popup" ng-if="$ctrl.lang == 'ru'">
+        <div class="" >
+            <h4>
+                УВАЖАЕМЫЕ ОБУЧАЮЩИЕСЯ! <br>
+            </h4>
+            <br>
+
+            <p>Просим Вас ознакомиться с инструкциями и видеоматериалами по использованию MS Teams и Polytech Online. Все необходимые инструкции доступны по следующей ссылке: <a href="https://polytechonline.kz/cabinet/course/view.php?id=134">polytechonline</a></p>
+            <p>Также ИЦТиПР приглашает вас принять участие в тренинге, который будет проводиться 24.11.2023 в 15:00 для студентов: <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2ZiYjJhYmYtMTUzYS00NjgwLTk1NGEtMDc3MmE5Nzg2NjI0%40thread.v2/0?context=%7b%22Tid%22%3a%2249cc33db-453b-4ada-aaee-63c5dcd64f9c%22%2c%22Oid%22%3a%221b67cab6-05de-46ff-9cfd-a0a99f5ef672%22%7d ">teams</a></p>
+            <br>
+            <div class="btton-inner-checkbox" style="align-items: flex-start; margin-bottom: 0;">
+                <input type="checkbox" id="need-firstLevel" ng-model="$ctrl.isCheckFirstLevelBachelor">
+                <label for="need-firstLevel" style="text-align: left; font-size: 18px !important;">
+                    <small>Пожалуйста подтвердите ознакомление с инструкциями!</small>
+                </label>
+            </div>
+
+          
+            <div class="btton-wrapper w-margin" style="margin-top: 1.5rem;">
+                <button class="btton btton-primary btton-start-page btton-xs"
+                    ng-click="$ctrl.saveFirstLevelBachelor()" style="margin: auto;"  ng-disabled="$ctrl.isCheckFirstLevelBachelor == false">
+                    -- {{ 'SAVE' | translate }} --
+                    Отправить
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="in_alert forget_pass_popup" ng-if="$ctrl.lang == 'kz'">
+        <div class="">
+            <h4>
+                ҚҰРМЕТТІ СТУДЕНТТЕР! <br>
+            </h4>
+            <br>
+
+            <p>Біз сізден MS Teams және Polytech Online пайдалану бойынша нұсқаулар мен бейнелермен танысуыңызды сұраймыз. Барлық қажетті нұсқаулар келесі сілтемеде:  <a href="https://polytechonline.kz/cabinet/course/view.php?id=134">polytechonline</a></p>
+            <p>Cонымен қатар сіздерді 2023 жылы 24 қарашада 15: 00-де қатысуға шақырады:  <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2ZiYjJhYmYtMTUzYS00NjgwLTk1NGEtMDc3MmE5Nzg2NjI0%40thread.v2/0?context=%7b%22Tid%22%3a%2249cc33db-453b-4ada-aaee-63c5dcd64f9c%22%2c%22Oid%22%3a%221b67cab6-05de-46ff-9cfd-a0a99f5ef672%22%7d ">teams</a></p>
+            <br>
+            <div class="btton-inner-checkbox" style="align-items: flex-start; margin-bottom: 0;">
+                <input type="checkbox" id="need-firstLevel" ng-model="$ctrl.isCheckFirstLevelBachelor">
+                <label for="need-firstLevel" style="text-align: left; font-size: 18px !important;">
+                    <small>Нұсқаулармен танысқандарыңызды растаңыз!</small>
+                </label>
+            </div>
+
+          
+            <div class="btton-wrapper w-margin" style="margin-top: 1.5rem;">
+                <button class="btton btton-primary btton-start-page btton-xs"
+                    ng-click="$ctrl.saveFirstLevelBachelor()" style="margin: auto;"  ng-disabled="$ctrl.isCheckFirstLevelBachelor == false">
+                    {{ 'SAVE' | translate }}
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+</nitu-dialog>-->
+<nitu-dialog is-open="$ctrl.onai.isOpen" dialog-type="White"><!--Dark Type-->
+<!---->
+    
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+
+<nitu-dialog is-open="$ctrl.onai.hasError" dialog-type="White"><!--Dark Type-->
+<!---->
+    
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+<nitu-dialog is-open="$ctrl.questionnairesDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+<nitu-dialog is-open="$ctrl.fitBackFormDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+<nitu-dialog is-open="$ctrl.DistanceDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+<nitu-dialog is-open="$ctrl.DistanceStudentCoursesDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+<nitu-dialog is-open="$ctrl.DistanceStudentCoursesDisabledDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+<nitu-dialog is-open="$ctrl.DistanceCityDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog>
+
+
+<nitu-dialog is-open="$ctrl.DistanceSuccessDialog.isOpen"><!--Dark Type-->
+<!----><div class="dialog-overlay ng-hide" ng-if="$ctrl.dialogType == 'Dark'" ng-click="$ctrl.overlayClicked()" ng-show="$ctrl.isOpen">
+    </div><!---->
+    
+
+<!--White Type-->
+<!---->
+
+<!--White Type-->
+<!---->
+
+<!-- Notification -->
+<!---->
+
+
+</nitu-dialog></students-start-page></div>
+<!----><div ui-view="chat"></div></nitu-header>
+                            </div> 
+                        </div></ui-view></students-app>
+</div>
+
+<form action="https://stud.satbayev.university/Account/LogOff" id="logoutForm" method="post"></form>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+
+
+
+</body></html>
